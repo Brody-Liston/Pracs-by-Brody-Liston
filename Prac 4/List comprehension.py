@@ -28,13 +28,20 @@ a_names = [name for name in names if name.startswith('A')]
 print(a_names)
 
 # TODO: use a list comprehension to create a list of all of the full_names
+lower_case_names = [name.lower() for name in names]
+print (lower_case_names)
 # in lowercase format
 # lowercase_full_names =
 
 almost_numbers = ['0', '10', '21', '3', '-7', '88', '9']
 # TODO: use a list comprehension to create a list of integers
+numbers = [int(i) for i in almost_numbers]
+print (numbers)
 # from the above list of strings
 # numbers =
 
 # TODO: use a list comprehension to create a list of only the numbers that are
+large_numbers = [i for i in numbers if i >= 5]
+large_numbers.sort()
+print (large_numbers)
 # greater than 9 from the numbers (not strings) you just created
