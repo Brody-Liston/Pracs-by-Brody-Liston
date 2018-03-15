@@ -1,0 +1,19 @@
+import random
+
+def main():
+
+    picks = []
+
+    num_picks = int(input("How many Quick Picks? "))
+
+    for amount in range(1, num_picks + 1):
+        for i in range(6):
+            picks=random.sample(range(100),6)
+            picks.sort()
+        print(picks)
+        picks[:] = []
+
+
+
+
+main()
