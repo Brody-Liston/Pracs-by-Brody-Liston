@@ -36,6 +36,3 @@ class Car:
 
         return "{}, fuel = {}, Odometer = {}".format(self.car_name, self.fuel, self.odometer)
 
-   # def name(self,):
-
-        #for
